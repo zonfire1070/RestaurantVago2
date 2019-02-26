@@ -3,6 +3,8 @@ package com.example.restaurantvago;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+// RestaurantVago App
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
