@@ -15,7 +15,7 @@ public class SplashScreen extends AppCompatActivity {
 
         EasySplashScreen config = new EasySplashScreen(SplashScreen.this)
                 .withFullScreen()
-                .withTargetActivity(MainActivity.class)
+                .withTargetActivity(Main2Activity.class)
                 .withSplashTimeOut(5000)
                 .withBackgroundColor(Color.parseColor("#ffffff"))
                 .withLogo(R.mipmap.ic_launcher_foreground)
