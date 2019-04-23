@@ -76,12 +76,16 @@ public class Main2Activity extends AppCompatActivity  {
         int id = item.getItemId();
 
         switch(id) {
-            case R.id.action_map:
+            case R.id.action_map: {
+                Intent intent = new Intent(this, MapActivity.class);
+                startActivity(intent);
                 return true;
-            case R.id.action_about_us:
+            }
+            case R.id.action_about_us: {
                 Intent intent = new Intent(this, AboutUsActivity.class);
                 startActivity(intent);
                 return true;
+            }
             default:
                 return super.onOptionsItemSelected(item);
         }
