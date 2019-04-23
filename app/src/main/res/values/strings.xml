@@ -9,4 +9,6 @@
     <string name="tab_text_3">Reservation</string>
     <string name="title_activity_about_us">AboutUsActivity</string>
     <string name="title_activity_map">MapActivity</string>
+    <string name="about_us_p1">Restaurant Vago is a recognized leader in the area of providing customers with quality service and excellent cuisine across south-eastern Wisconsin.</string>
+    <string name="about_us_p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat lacus ut egestas vehicula. Aliquam ut sagittis neque. Aliquam fermentum enim sed eros ultrices, sed condimentum lectus tincidunt. Donec justo ligula, euismod quis finibus at, tristique vitae velit. Ut id urna ac sem condimentum dictum a vitae quam. Fusce mollis gravida arcu, eget congue est vehicula ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor tellus eu eros laoreet pellentesque. Mauris eget dapibus urna, a tempus sem. Aenean sodales diam nec diam elementum tempus. Nam eu vestibulum purus, vel congue purus. Nulla pellentesque orci eget libero condimentum pulvinar. Cras eu nibh a dolor ultricies porta.</string>
 </resources>
