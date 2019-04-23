@@ -7,4 +7,5 @@
     <string name="tab_text_1">Home</string>
     <string name="tab_text_2">Menu</string>
     <string name="tab_text_3">Reservation</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
 </resources>

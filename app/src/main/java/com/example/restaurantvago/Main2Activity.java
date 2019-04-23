@@ -16,7 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.DatePicker;
 import android.widget.TextView;
-
+import android.content.Intent;
 import java.util.Calendar;
 
 public class Main2Activity extends AppCompatActivity  {
@@ -58,11 +58,6 @@ public class Main2Activity extends AppCompatActivity  {
 
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
-
-
-
-        ;
-
     }
 
 
@@ -84,6 +79,8 @@ public class Main2Activity extends AppCompatActivity  {
             case R.id.action_map:
                 return true;
             case R.id.action_about_us:
+                Intent intent = new Intent(this, AboutUsActivity.class);
+                startActivity(intent);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
