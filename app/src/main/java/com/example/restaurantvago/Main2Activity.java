@@ -1,6 +1,7 @@
 package com.example.restaurantvago;
 
-import android.app.DatePickerDialog;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -14,10 +15,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.DatePicker;
 import android.widget.TextView;
-import android.content.Intent;
-import java.util.Calendar;
+import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity  {
 
@@ -77,8 +76,14 @@ public class Main2Activity extends AppCompatActivity  {
 
         switch(id) {
             case R.id.action_map: {
-                Intent intent = new Intent(this, MapActivity.class);
-                startActivity(intent);
+                //https://developers.google.com/maps/documentation/urls/android-intents
+                Uri mapsIntentUri = Uri.parse("geo:43.0751,-87.8811?z=16");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, mapsIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
+
+                Toast toast = Toast.makeText(getApplicationContext(), "Showing Google Maps view of Restaurant Vago" , Toast.LENGTH_LONG);
+                toast.show();
                 return true;
             }
             case R.id.action_about_us: {
