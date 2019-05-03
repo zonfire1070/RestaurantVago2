@@ -1,11 +1,9 @@
 package com.example.restaurantvago;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
+import android.widget.ImageButton;
 
 public class AboutUsActivity extends AppCompatActivity {
 
@@ -16,6 +14,20 @@ public class AboutUsActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        ImageButton faceBookBtn = findViewById(R.id.faceBookBtn);
+        ImageButton twitterBtn = findViewById(R.id.twitterBtn);
+        ImageButton instagramBtn = findViewById(R.id.instagramBtn);
+        ImageButton youtubeBtn = findViewById(R.id.youtubeBtn);
+
+
+        faceBookBtn.setImageResource(R.drawable.facebook);
+        faceBookBtn.setBackgroundDrawable(null);
+        twitterBtn.setImageResource(R.drawable.twitter);
+        twitterBtn.setBackgroundDrawable(null);
+        instagramBtn.setImageResource(R.drawable.instagram);
+        instagramBtn.setBackgroundDrawable(null);
+        youtubeBtn.setImageResource(R.drawable.youtube);
+        youtubeBtn.setBackgroundDrawable(null);
     }
 
 }
