@@ -7,6 +7,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -15,6 +16,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -128,12 +131,54 @@ public class Main2Activity extends AppCompatActivity  {
          if (getArguments().getInt(ARG_SECTION_NUMBER) == 1)
          {
              View rootView = inflater.inflate(R.layout.fragment_blank_fragment_tab1, container, false);
+
+             Button rBtn = rootView.findViewById(R.id.rBtn);
+             rBtn.setOnClickListener(new View.OnClickListener(){
+                 @Override
+                 public void onClick(View view){
+
+                 }
+
+             });
+
              return rootView;
-         } else if (getArguments().getInt(ARG_SECTION_NUMBER) == 2){
+         }
+         else if (getArguments().getInt(ARG_SECTION_NUMBER) == 2)
+         {
              View rootView = inflater.inflate(R.layout.fragment_blank_fragment_tab2, container, false);
+
+             ImageButton aBtn = rootView.findViewById(R.id.aBtn);
+             aBtn.setOnClickListener(new View.OnClickListener(){
+                 @Override
+                 public void onClick(View view){
+                     Intent j = new Intent(getActivity(), aptzrMenu.class);
+                     startActivity(j);
+                 }
+             });
+
+             ImageButton bBtn = rootView.findViewById(R.id.bBtn);
+             bBtn.setOnClickListener(new View.OnClickListener(){
+                 @Override
+                 public void onClick(View view){
+                     Intent i = new Intent(getActivity(), burgerMenu.class);
+                     startActivity(i);
+                 }
+             });
              return rootView;
+
+
          } else if (getArguments().getInt(ARG_SECTION_NUMBER) == 3) {
              View rootView = inflater.inflate(R.layout.fragment_blank_fragment_tab3, container, false);
+
+             Button button1 = rootView.findViewById(R.id.button1);
+             button1.setOnClickListener(new View.OnClickListener(){
+                 @Override
+                 public void onClick(View view){
+                     Intent j = new Intent(getActivity(), thankYou.class);
+                     startActivity(j);
+                 }
+             });
+
              return rootView;
          } else {
              View rootView = inflater.inflate(R.layout.fragment_main2, container, false);
